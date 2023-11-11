@@ -1,11 +1,6 @@
 package web.model;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-@Component
 public class Car {
     private String brand;
     private String model;
@@ -43,16 +38,7 @@ public class Car {
     public void setSeries(int series) {
         this.series = series;
     }
-    @Bean
-    public List<Car> getListCar(){
-        List<Car> carList = new ArrayList<>();
-        carList.add(new Car("Mercedec","E",125));
-        carList.add(new Car("Audi","A8",127));
-        carList.add(new Car("Hundai","Solaris",352));
-        carList.add(new Car("KIA","RIO",32));
-        carList.add(new Car("Nissan","Almera",11));
-        return carList;
-    }
+
 
     @Override
     public String toString() {
